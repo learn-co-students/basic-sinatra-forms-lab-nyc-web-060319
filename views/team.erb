@@ -5,10 +5,12 @@
   <title>Basketball Team</title>
  </head>
  <body>
- 
-
+   <% x = ["Team Name", "Coach", "Point Guard","Shooting Guard", "Small Forward", "Power Forward", "Center"] %>
+   <% i = 0 %>
+<% @team.each do |key, value| %>
+  <%= x[i] + ": " + value %> <br>
+  <% i += 1 %>
+<% end %>
 
  </body>
 </html>
-
-
